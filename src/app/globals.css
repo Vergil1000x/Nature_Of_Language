@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-op {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.5, 0, .25, 1.5);
+    transition-duration: 400ms;
+  }
+
+  .transition-op2 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.25, 0.75, .5, 1.25);
+    transition-duration: 800ms;
+  }
+
+  .transition-op3 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.25,.1,.25,1);
+    transition-duration: 800ms;
+  }
+
+  .shadow-op-down {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12)
+  }
+  .shadow-op-down-menu {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 200, 255, 0.086),
+      0 100px 80px rgba(255, 63, 63, 0.12)
+  }
+
+  .shadow-op-down-diff {
+    box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.1), 0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 56px rgba(17, 17, 26, 0.1);
+  }
+
+  .shadow-op-down-head {
+    box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+      0 3.35px 2.65px rgba(0, 0, 0, 0.048),
+      0 6.25px 5px rgba(0, 0, 0, 0.06),
+      0 11.15px 8.95px rgba(0, 0, 0, 0.072),
+      0 20.9px 16.7px rgba(0, 0, 0, 0.086),
+      0 50px 40px rgba(0, 0, 0, 0.12)
+  }
+
+  .shadow-op-down-eng {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(255, 0, 0, 0.086),
+      0 100px 80px rgba(255, 0, 0, 0.12)
+  }
+
+  .shadow-op-down-ger {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(255, 204, 0, 0.086),
+      0 100px 80px rgba(255, 204, 0, 0.12)
+  }
+
+  .shadow-op-right {
+    box-shadow: 2.8px 0 2.2px rgba(0, 0, 0, 0.034),
+      6.7px 0 5.3px rgba(0, 0, 0, 0.048),
+      12.5px 0 10px rgba(0, 0, 0, 0.06),
+      22.3px 0 17.9px rgba(0, 0, 0, 0.072),
+      41.8px 0 33.4px rgba(0, 0, 0, 0.086),
+      100px 0 80px rgba(0, 0, 0, 0.12)
+  }
+
+  .a-sq {
+    aspect-ratio: 1/1;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+
+  .display-linebreak {
+    white-space: pre-line;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+  }
+}
